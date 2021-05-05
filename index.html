@@ -16,76 +16,44 @@
               <h1>Hello! Good day today!</h1>
               
             <div class="cycle">
-              <p>Starting of Cycle Data!</p>
+              <select id="cycle-switch">
+                <option value="start">Start cycle</option>
+                <option value="end">End cycle</option>
+              </select>
               <div class="form-group">
-                <label for="humidifier" class="startcycle" name="date-time">Date and time refilling of humidifier </label>
-                <input type="datetime-local" class="startcycle" name="date-time" required>
+                <label for="date" >Date and time refilling of humidifier </label>
+                <input type="datetime-local" id="date" required>
               </div>
               
               <div class="form-group">
-                <label for="humidifier" class="startcycle" name="in-temperature">Indoor Temperature</label>
+                <label for="inTemp">Indoor Temperature</label>
                 <!-- realise getting data from inside sensor -->
-                <input type="number" class="startcycle" name="in-temperature" placeholder="Indoor temperature in °C">
+                <input type="number" id="inTemp" placeholder="Indoor temperature in °C">
               </div>
 
               <div class="form-group">
-                <label for="humidifier" class="startcycle" name="in-humidity">Indoor Humidity</label>
-                <input type="number" class="startcycle" name="in-humidity" placeholder="Relative humidity in %">
+                <label for="inHumidity">Indoor Humidity</label>
+                <input type="number" id="inHumidity" placeholder="Relative humidity in %">
               </div>
               
               <div class="form-group"> 
-                <label for="humidifier" class="startcycle" name="out-temperature" >Outdoor Temperature</label>
+                <label for="outTemp">Outdoor Temperature</label>
                 <!-- realise getting data from sensor or weather site-->
-                <input type="number" class="startcycle" name="out-temperature" placeholder="Outdoor temperature in °C">
+                <input type="number" id="outTemp" placeholder="Outdoor temperature in °C">
               </div> 
 
               <div class="form-group">
-                <label for="humidifier" class="startcycle" name="out-humidity">Outdoor Humidity</label>
-                <input type="number" class="startcycle" name="out-humidity" placeholder="Relative humidity in %">
+                <label for="outHumidity">Outdoor Humidity</label>
+                <input type="number" id="outHumidity" placeholder="Relative humidity in %">
               </div>
               
               <button type="submit" class="btn">Submit</button>
             </div>
 
-        <div class="cycle">
-          <p>The End of Cycle Data</p>
-          <div class="form-group">
-            <label for="humidifier" class="endcycle" name="date-time">Date and time of cycle end</label>
-            <input type="datetime-local" class="endcycle" name="date-time" required>
-          </div>
-          
-          <div class="form-group">
-            <label for="humidifier" class="endcycle" name="in-temperature">Indoor Temperature</label>
-            <!-- realise getting data from inside sensor -->
-            <input type="number" class="endcycle" name="in-temperature" placeholder="Indoor temperature in °C">
-          </div>
-          
-          <div class="form-group">
-            <label for="humidifier" class="endcycle" name="in-humidity">Indoor Humidity</label>
-            <input type="number" class="endcycle" name="in-humidity" placeholder="Relative humidity in %">
-          </div>
-          
-          <div class="form-group"> 
-            <label for="humidifier" class="endcycle" name="out-temperature" >Outdoor Temperature</label>
-            <!-- realise getting data from sensor or weather site-->
-            <input type="number" class="endcycle" name="out-temperature" placeholder="Outdoor temperature in °C">
-          </div> 
-          
-          <div class="form-group">
-            <label for="humidifier" class="endcycle" name="out-humidity">Outdoor Humidity</label>
-            <input type="number" class="endcycle" name="out-humidity" placeholder="Relative humidity in %">
-          </div>
-          
-          <div class="form-group">
-            <label for="humidifier" class="endcycle" name="volume">Rest of water</label>
-            <input type="number" class="endcycle" name="volume" required>
-          </div>
-
-          <button type="submit" class=btn>Submit</button>
-        </div>
       </div>
     </div>
-    <!-- temp widget -->
+    
+    <!-- tempature widget -->
     <div id="window-1">
       <div class="window-wrap">
         <div class="city">
@@ -113,6 +81,8 @@
           </div>
       </div>
     </div>  
+
   </div> 
+  <script src="./index.js"></script>
 </body>
 </html>
