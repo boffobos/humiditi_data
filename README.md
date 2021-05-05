@@ -1,0 +1,1 @@
+Project for monitoring humidity in room
