@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Humidity data</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="flex-container"> 
+
+    <div class="window-0">
+      <div id="container">
+              <h1>Hello! Good day today!</h1>
+              
+            <div class="cycle">
+              <p>Starting of Cycle Data!</p>
+              <div class="form-group">
+                <label for="humidifier" class="startcycle" name="date-time">Date and time refilling of humidifier </label>
+                <input type="datetime-local" class="startcycle" name="date-time" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="humidifier" class="startcycle" name="in-temperature">Indoor Temperature</label>
+                <!-- realise getting data from inside sensor -->
+                <input type="number" class="startcycle" name="in-temperature" placeholder="Indoor temperature in °C">
+              </div>
+
+              <div class="form-group">
+                <label for="humidifier" class="startcycle" name="in-humidity">Indoor Humidity</label>
+                <input type="number" class="startcycle" name="in-humidity" placeholder="Relative humidity in %">
+              </div>
+              
+              <div class="form-group"> 
+                <label for="humidifier" class="startcycle" name="out-temperature" >Outdoor Temperature</label>
+                <!-- realise getting data from sensor or weather site-->
+                <input type="number" class="startcycle" name="out-temperature" placeholder="Outdoor temperature in °C">
+              </div> 
+
+              <div class="form-group">
+                <label for="humidifier" class="startcycle" name="out-humidity">Outdoor Humidity</label>
+                <input type="number" class="startcycle" name="out-humidity" placeholder="Relative humidity in %">
+              </div>
+              
+              <button type="submit" class="btn">Submit</button>
+            </div>
+
+        <div class="cycle">
+          <p>The End of Cycle Data</p>
+          <div class="form-group">
+            <label for="humidifier" class="endcycle" name="date-time">Date and time of cycle end</label>
+            <input type="datetime-local" class="endcycle" name="date-time" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="humidifier" class="endcycle" name="in-temperature">Indoor Temperature</label>
+            <!-- realise getting data from inside sensor -->
+            <input type="number" class="endcycle" name="in-temperature" placeholder="Indoor temperature in °C">
+          </div>
+          
+          <div class="form-group">
+            <label for="humidifier" class="endcycle" name="in-humidity">Indoor Humidity</label>
+            <input type="number" class="endcycle" name="in-humidity" placeholder="Relative humidity in %">
+          </div>
+          
+          <div class="form-group"> 
+            <label for="humidifier" class="endcycle" name="out-temperature" >Outdoor Temperature</label>
+            <!-- realise getting data from sensor or weather site-->
+            <input type="number" class="endcycle" name="out-temperature" placeholder="Outdoor temperature in °C">
+          </div> 
+          
+          <div class="form-group">
+            <label for="humidifier" class="endcycle" name="out-humidity">Outdoor Humidity</label>
+            <input type="number" class="endcycle" name="out-humidity" placeholder="Relative humidity in %">
+          </div>
+          
+          <div class="form-group">
+            <label for="humidifier" class="endcycle" name="volume">Rest of water</label>
+            <input type="number" class="endcycle" name="volume" required>
+          </div>
+
+          <button type="submit" class=btn>Submit</button>
+        </div>
+      </div>
+    </div>
+    <!-- temp widget -->
+    <div id="window-1">
+      <div class="window-wrap">
+        <div class="city">
+          <p id="location">Minsk</p>
+        </div>
+        <div class="temperature">
+          <p id="temp">°C</p>
+        </div>
+        <div class="time-form">
+          <p id="time">10:11</p>
+        </div>
+        <div class="date-form">
+          <p id="date">09/12/2020</p>
+        </div>
+      </div>
+    </div>  
+
+    <div id="window-2">
+      <div class="window-wrap">
+          <div class="room">
+            <p id="room">Room</p>
+          </div>
+          <div class="temperature">
+            <p id="room-temp">°C</p>
+          </div>
+      </div>
+    </div>  
+  </div> 
+</body>
+</html>
