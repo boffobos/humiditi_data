@@ -48,7 +48,7 @@ body {
   text-align: center;
   background: #f4f4f4;
   width: 90px;
-  height: 90px;
+  height: fit-content;
   padding: 10px;
   border: #666 1px solid;
   border-radius: 6px;
@@ -66,9 +66,10 @@ body {
 }
 
 
-.cycle p {
-  text-align: center;
-  font-size: 18px;
+.cycle > div > label {
+  text-align: left;
+  font-size: 1.1rem;
+  font-weight: 700;
   padding: auto;
 }
 
